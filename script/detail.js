@@ -9,7 +9,7 @@ var db = fetch('./database.json')
         console.log(item)
         if (item) {
             document.getElementById("pName").innerHTML = item.name;
-            document.getElementById("pImg").src= item.img;
+            document.getElementById("pImg").src = item.img;
             document.getElementById("pPrice").innerHTML = `${item.price}.000 VND`;
         }
 
@@ -39,7 +39,12 @@ var db = fetch('./database.json')
 
 // Cart function
 
-localStorage.setItem('cart', [])
-var cartNum = localStorage.getItem('cart')
+var cart = localStorage.getItem('cart')
 
+
+function addToCart(){
+    // localStorage.setItem('cart', id)
+    // DO NOT use right now
+    // TODO fix this
+}
 // End of Cart function
