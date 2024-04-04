@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
             <div class="nav-bar">
                 <!-------- logo -------->
                 <div class="logo">
-                    <img src="img/positive_yellow_04.png" alt="logo" width:125px>
+                    <img src="img/logo.png" alt="logo" width:125px>
                 </div>               
                 <!-- menu-bar -->        
                 <nav>
@@ -38,17 +39,17 @@
                       <li class="hideOnMobile"><a href="#">Account</a></li>
                       <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
                     </ul>
-                    <script src="main.js"></script>         
+                    <script src="script/index.js"></script>         
                 </nav>
             </div>
             <div class="row">
                 <div class="col-2">
+                    <img src="img/image1.png">
+                </div>
+                <div class="col-2">
                     <h1>Give ur workout <br>A New Style!</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, unde doloribus? Iusto, magnam.<br> Placeat in neque iure, dolore, minus sequi architecto,<br> ratione nesciunt laborum quam corrupti magni harum consequuntur rerum!</p>
                     <a href="#" class="btn">Explore More &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1.png">
                 </div>
             </div>
         </div>
@@ -57,39 +58,82 @@
     <!---------- Featured Categories --------->
     <div class="categories">
         <div class="small-container">
-            <h2>Featured Categories</h2>
+            <div class="content">
+                <h2>Featured Categories</h2>
+            </div>
             <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg"> 
-                    <a href="">Item 1</a>
+                <div class="col-3" style="text-align: center;">
+                    <a href="#">
+                        <img src="img/category-1.jpg"> 
+                        <a href="">Item 1</a>
+                    </a>
                 </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg">
-                    <a href="">Item 2</a>
+                <div class="col-3" style="text-align: center;">
+                    <a href="#">
+                        <img src="img/category-2.jpg"> 
+                        <a href="">Item 1</a>
+                    </a>
                 </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg">
-                    <a href="">Item 3</a>
+                <div class="col-3" style="text-align: center;">
+                    <a href="#">
+                        <img src="img/category-3.jpg"> 
+                        <a href="">Item 1</a>
+                    </a>
                 </div>           
             </div>
         </div>
     </div>
+
     <!---------- Featured Products --------->
     <div class="small-container">
-        <h2>Featured Products</h2>
-        <div class="row">
-            <div class="col-4"></div>
+        <div class="content">
+            <h2>Featured Products</h2>
         </div>
-    </div>
-    <!-- content -->
-    <div class="content">
         <div class="row">
-            
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-2.jpg">
+                    <h4>Item 2</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-6.jpg">
+                    <h4>Item 3</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-3.jpg">
+                    <h4>Item 4</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-4.jpg">
+                    <h4>Item 5</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-5.jpg">
+                    <h4>Item 6</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
         </div>
-    </div>
-        
-    <div class="footer">
-        <p>Footer</p>
-    </div>
+        <a href="#" class="btn" style="margin-left: 42.5%;">Explore More</a>
+    </div>   
 </body>
 </html>
