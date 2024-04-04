@@ -1,26 +1,71 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "email": "tester@example.com"
-        },
-        {
-            "id": 2,
-            "name": "Jane Smith",
-            "email": "janesmith@example.com"
-        }
-    ],
     "products": [
         {
             "id": 1,
-            "name": "Product 1",
-            "price": 10.99
+            "name": "Áo thun nam đỏ",
+            "img": "img/product-1.jpg",
+            "price": 500
         },
         {
             "id": 2,
-            "name": "Product 2",
-            "price": 19.99
+            "name": "Giầy nam đen",
+            "img": "img/product-2.jpg",
+            "price": 625
+        },
+        {
+            "id": 3,
+            "name": "Quần xám nam",
+            "img": "img/product-3.jpg",
+            "price": 350
+        },
+        {
+            "id": 4,
+            "name": "Áo xanh nam",
+            "img": "img/product-4.jpg",
+            "price": 425
+        },        {
+            "id": 5,
+            "name": "Giày thể thao",
+            "img": "img/product-5.jpg",
+            "price": 600
+        },
+        {
+            "id": 6,
+            "name": "Áo thun đen nam",
+            "img": "img/product-6.jpg",
+            "price": 340
+        },
+        {
+            "id": 7,
+            "name": "Tất",
+            "img": "img/product-7.jpg",
+            "price": 40
+        },
+        {
+            "id": 8,
+            "name": "Đồng hồ đeo tay",
+            "img": "img/product-8.jpg",
+            "price": 745
+        },        {
+            "id": 9,
+            "name": "Đồng hồ thông minh",
+            "img": "img/product-9.jpg",
+            "price": 850
+        },        {
+            "id": 10,
+            "name": "Giày thể theo nam",
+            "img": "img/product-10.jpg",
+            "price": 660
+        },        {
+            "id": 11,
+            "name": "Giầy lười nam",
+            "img": "img/product-11.jpg",
+            "price": 450
+        },        {
+            "id": 12,
+            "name": "Quần chun đen",
+            "img": "img/product-12.jpg",
+            "price": 350
         }
     ]
 }

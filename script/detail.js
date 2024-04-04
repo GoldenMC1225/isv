@@ -1,21 +1,16 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 
-console.log(urlParams)
-
+// Fetch data from database & Edit content
 var db = fetch('./database.json')
     .then(res => res.json())
     .then(data => {
         const item = data.products.find(item => item.id == id);
         console.log(item)
         if (item) {
-            document.querySelector('#product').innerHTML = `
-                <div>
-                    <h1>${item.name}</h1>
-                    <p>${item.price}</p>
-                    <img src="${item.image}" alt="">
-                </div>
-            `;
+            document.getElementById("pName").innerHTML = item.name;
+            document.getElementById("pImg").src= item.img;
+            document.getElementById("pPrice").innerHTML = `${item.price}.000 VND`;
         }
 
         // else if (item === undefined){
@@ -36,5 +31,15 @@ var db = fetch('./database.json')
         //     </div>
         // `).join('');
         // document.querySelector('#product').innerHTML = product;
+        console.log(data);
     })
     .catch(error => console.error('Error:', error));
+
+// End of Fetch data & Edit content
+
+// Cart function
+
+localStorage.setItem('cart', [])
+var cartNum = localStorage.getItem('cart')
+
+// End of Cart function
