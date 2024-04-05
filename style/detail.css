@@ -5,13 +5,13 @@
 }
 
 body{
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 a{
-    text-decoration: none !important;
-    color: unset !important;
+    text-decoration: none;
+    color: unset;
 }
 
 li{
@@ -22,17 +22,63 @@ p{
     color: #555;
 }
 
+/* GLOBAL */
+
+.btn{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 .inline{
     display: inline;
 }
 
-.gx-10{
-    --bs-gutter-x: -50rem !important;
+.flex{
+    display: flex
 }
+
+/* .gx-10{
+    --bs-gutter-x: -50rem !important;
+} */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}
+
+/* END GLOBAL */
 
 /* NAVBAR */
 
-.containerr{
+.container{
     max-width: 1300px;
     margin: auto;
     padding-left: 25px;
@@ -76,9 +122,10 @@ nav a{
 }
 
 nav a:hover{
-    background-color:#dcd7d7;
-    border-radius: 5px;
+    background-color:#dcd7d7 !important;
+    border-radius: 5px !important;
 }
+
 nav li:first-child{
     margin-right: auto !important;
 }
@@ -101,7 +148,7 @@ nav li:first-child{
 
 /* SIDEBAR */
 
-.sidebarr {
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -117,23 +164,23 @@ nav li:first-child{
     justify-content: flex-start;
 }
 
-.sidebarr li {
+.sidebar li {
     width: 100%;
 }
 
-.sidebarr a {
+.sidebar a {
     width: 100%;
 }
 
 /* MENU BTN */
 
 .menu-button {
-    display: none !important;
+    display: none;
 }
 
 @media(max-width: 800px) {
     .hideOnMobile {
-        display: none;
+        display: none !important;
     }
 
     .menu-button {
@@ -142,7 +189,7 @@ nav li:first-child{
 }
 
 @media(max-width: 400px) {
-    .sidebarr {
+    .sidebar {
         width: 100%;
     }
 }
@@ -192,8 +239,9 @@ nav li:first-child{
 .product-detail #pQuantity{
     display: inline-block;
     width: 80px;
-    height: 45px;
+    height: 20px;
     padding: 10px;
+    margin-top: 10px;
     border: 2px solid #fb5202;
     border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;

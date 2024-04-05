@@ -48,3 +48,17 @@ function addToCart(){
     // TODO fix this
 }
 // End of Cart function
+
+
+// SIDEBAR
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
+
+// End of SIDEBAR
