@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/products.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container"> 
+            <!-- nav-bar-->
+            <div class="nav-bar">
+                <!-------- logo -------->
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo" width:125px>
+                </div>               
+                <!-- menu-bar -->        
+                <nav>
+                    <ul class="sidebar">
+                      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Cart</a></li>
+                      <li><a href="#">Account</a></li>
+                    </ul>
+                    <ul>
+                      <li class="hideOnMobile"><a href="#">Home</a></li>
+                      <li class="hideOnMobile"><a href="#">Products</a></li>
+                      <li class="hideOnMobile"><a href="#">About</a></li>
+                      <li class="hideOnMobile"><a href="#">Contact</a></li>
+                      <li class="hideOnMobile"><a href="#">Account</a></li>
+                      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                    </ul>
+                    <script src="script/index.js"></script>         
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------- Featured Products--------------------- -->
+    <div class="small-container">
+        <div class="content">
+            <h2>Featured Products</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-2.jpg">
+                    <h4>Item 2</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-6.jpg">
+                    <h4>Item 3</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-3.jpg">
+                    <h4>Item 4</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-4.jpg">
+                    <h4>Item 5</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="#" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-5.jpg">
+                    <h4>Item 6</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="btn" style="margin-left: 42.5%;">Explore More</a>
+    </div>   
+</body>
+</html>
