@@ -4,21 +4,21 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
-/* header */
+                             /* header */
 .header {
   background: radial-gradient(#fff, #ffd6d6);
 }
 .header row {
   margin-top:70px ;
 }
-/* container */
+                               /* container */
 .container{
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
-/* font-size */
+                            /* font */
 .title {
   text-align: center;
   font-size: 30px;
@@ -38,6 +38,7 @@
   transform: translateX(-50%);
 
 }
+
 /* logo */
 img {
     display: flex;
@@ -48,6 +49,7 @@ img {
 /* nav-bar */
 .nav-bar {
   min-height: 50px;
+  position:-webkit-sticky;
   display: flex;
   align-items: center;    
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -80,7 +82,7 @@ nav a{
   color: black;
 }
 
-                                      /* hieu ung */
+  /* hieu ung */
 
 nav a:hover{
   background-color:#dcd7d7;
@@ -90,7 +92,7 @@ nav li:first-child{
   margin-right: auto;
 }
 
-                                      /* thanh ben trai */
+  /* thanh ben trai */
 .sidebar{
   position: fixed;
   top: 0; 
@@ -113,7 +115,7 @@ nav li:first-child{
   width: 100%;
 }
 
-                                        /* nut menu */
+  /* nut menu */
 .menu-button{
   display: none;
 }
@@ -131,7 +133,7 @@ nav li:first-child{
   }
 }
  
-                                        /* main-page */
+/* main-page */
 .row {
   display: flex;
   align-items: center;
@@ -151,7 +153,7 @@ nav li:first-child{
   margin:25px 0;
 }
 
-                                    /* explore more */
+/* explore more */
 .btn {
   display: inline-block;
   background: #ff523b;
@@ -166,7 +168,22 @@ nav li:first-child{
   color:whitesmoke;
 }
 
-                                    /* featured categories */
+.btn-1 {
+  
+  display: inline-block;
+  background: #ff523b;
+  color:#fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn-1:hover{
+  background-color:black;
+  color:whitesmoke;
+}
+
+/* featured categories */
 .categories {
   margin:50px ;
 }
@@ -189,7 +206,7 @@ nav li:first-child{
   padding-left: 25px;
   padding-right: 25px;
 }
-                              /* featured product */
+/* featured product */
 .col-4 {
   flex-basis: 25%;
   padding:10px;
@@ -201,9 +218,9 @@ nav li:first-child{
 .col-4 img {
   width:100%;
 }
-                                /* hieu ung anh */
+
+/* hieu ung anh */
 .col-4:hover{
   transform: translateY(-10px);
   transition: 0.5s;
 }
-

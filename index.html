@@ -5,12 +5,13 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+                        <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Shopping Web</title>
+    <link rel="styesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <title>VNU-IS Shopping Web</title>
 </head> 
 <body>
     <div class="header">
@@ -19,27 +20,28 @@
             <div class="nav-bar">
                 <!-------- logo -------->
                 <div class="logo">
-                    <img src="img/logo.png" alt="logo" style="width: 125px">
+                    <img src="img/logo.png" alt="logo" width:125px>
                 </div>               
                 <!-- menu-bar -->        
                 <nav>
                     <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a class="nav-link" href="cart.html"><i class="fa-duotone fa-cart-shopping" style="--fa-primary-color: #ff6550; --fa-secondary-color: #ff6550; font-size: 30px;"></i></a>
-                        </li>
+                      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="products.html">Products</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Cart</a></li>
+                      <li><a href="#">Account</a></li>
                     </ul>
                     <ul>
-                        <li class="hideOnMobile navLink"><a href="#">Home</a></li>
-                        <li class="hideOnMobile navLink"><a href="products.html">Products</a></li>
-                        <li class="hideOnMobile navLink"><a href="contact.html">Contact</a></li>
-                        <li class="hideOnMobile">
-                            <a class="nav-link" href="cart.html"><i class="fa-duotone fa-cart-shopping" style="--fa-primary-color: #ff6550; --fa-secondary-color: #ff6550; font-size: 30px;"></i></a>
-                        </li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                      <li class="hideOnMobile"><a href="#">Home</a></li>
+                      <li class="hideOnMobile"><a href="products.html">Products</a></li>
+                      <li class="hideOnMobile"><a href="#">About</a></li>
+                      <li class="hideOnMobile"><a href="#">Contact</a></li>
+                      <li class="hideOnMobile"><a href="#">Account</a></li>
+                      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
                     </ul>
+                    <script src="script/index.js"></script>         
                 </nav>
             </div>
             <div class="row">
@@ -58,7 +60,7 @@
     <!---------- Featured Categories --------->
     <div class="categories">
         <div class="small-container">
-            <div class="content">
+            <div class="title">
                 <h2>Featured Categories</h2>
             </div>
             <div class="row">
@@ -86,13 +88,16 @@
 
     <!---------- Featured Products --------->
     <div class="small-container">
-        <div class="content">
+        <div class="title">
             <h2>Featured Products</h2>
         </div>
         <div class="row">
             <div class="col-4">
                 <a href="#" style="text-decoration: none;color:black;text-align: center;">
                     <img src="img/product-1.jpg">
+                    <div class="rating">
+                        
+                    </div>
                     <h4>Item 1</h4>
                     <p>$50.00</p>
                 </a>
@@ -101,6 +106,7 @@
                 <a href="#" style="text-decoration: none;color:black;text-align: center;">
                     <img src="img/product-2.jpg">
                     <h4>Item 2</h4>
+                    
                     <p>$50.00</p>
                 </a>
             </div>
@@ -133,9 +139,12 @@
                 </a>
             </div>
         </div>
-        <a href="#" class="btn" style="margin-left: 42.5%;">Explore More</a>
+        
+        <a href="products.html" class="btn-1">...</a> 
+        <!-------------- latest products --------------->
+        <h2>Latest Products</h2>
     </div>
     
-    <script src="script/index.js"></script>         
+    
 </body>
 </html>
