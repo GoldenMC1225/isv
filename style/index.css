@@ -227,3 +227,10 @@ nav li:first-child{
   transform: translateY(-10px);
   transition: 0.5s;
 }
+
+.btn-explore{
+  margin-left: 23%;
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
