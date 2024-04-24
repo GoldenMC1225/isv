@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- google font -->
@@ -46,7 +48,7 @@
                         <li class="hideOnMobile"><a href="#">Home</a></li>
                         <!-- Dropdown -->
                         <div class="dropdown">
-                            <li class="hideOnMobile"><a href="products.html">Products</a>
+                        <li class="hideOnMobile"><a href="products.html">Products</a>
                                 <ul class="products-dropdown">
                                     <li><a href="">Shoes</a></li>
                                     <li><a href="">Shirts,T-shirts</a></li>
@@ -67,6 +69,7 @@
                     <script src="script/index.js"></script>
                 </nav>
             </div>
+
             <div class="row">
                 <div class="col-2">
                     <img src="img/image1.png">
@@ -82,34 +85,22 @@
         </div>
     </div>
 
-    <!---------- Featured Categories --------->
-    <div class="categories">
-        <div class="small-container">
-            <div class="title">
-                <h2>Featured Categories</h2>
+    <!--------- Featured Categories -------->
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="img/category-1.jpg"/>
+                <img id="slide-2" src="img/category-2.jpg"/>
+                <img id="slide-3" src="img/category-3.jpg"/>
             </div>
-            <div class="row">
-                <div class="col-3" style="text-align: center;">
-                    <a href="#">
-                        <img src="img/category-1.jpg">
-                        <a href="">Item 1</a>
-                    </a>
-                </div>
-                <div class="col-3" style="text-align: center;">
-                    <a href="#">
-                        <img src="img/category-2.jpg">
-                        <a href="">Item 1</a>
-                    </a>
-                </div>
-                <div class="col-3" style="text-align: center;">
-                    <a href="#">
-                        <img src="img/category-3.jpg">
-                        <a href="">Item 1</a>
-                    </a>
-                </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
             </div>
+            
         </div>
-    </div>
+    </section>
 
     <!---------- Featured Products --------->
     <div class="small-container">
@@ -118,7 +109,7 @@
         </div>
 
         <div class="row">
-            <div class="row">
+            <div class="container-row">
                 <div class="container page-wrapper">
                     <div class="page-inner">
                         <div class="row">
@@ -173,7 +164,6 @@
                                     <div class="h-bg">
                                         <div class="h-bg-inner"></div>
                                     </div>
-    
                                     <a class="cart" href="#">
                                         <span class="price">$120</span>
                                         <span class="add-to-cart">
@@ -337,10 +327,11 @@
                     <img src="img/exclusive.png" class="offer-img">
                 </div>
                 <div class="col-2">
-                    <p>Exclusively Available on RedStore</p>
+                    <p>Exclusively Available on VNU IS STORE</p>
                     <h1>Smart band 4</h1>
                     <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptatum</small>
+                        <!-- buy now -->
                     <a href="#" class="btn">Buy Now</a>
                 </div>
             </div>
@@ -348,33 +339,96 @@
     </div>
 
     <!-------------------------- TESTIMONIAL ---------------->
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <img src="img/user-1.png">
-                <h3>John Doe</h3>
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <h2 class="title">
+                    what our clients say
+                </h2>
             </div>
-
-            <div class="row">
-                <div class="col-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/user-1.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="name">John Doe</h3>
+                                    <span class="job">Designer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus
+                                distinctio voluptas id maiores, enim modi nisi dicta! Quibusdam minima sint illo tempora
+                                eos ea commodi nulla cum? Officia, laboriosam?</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/user-2.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="name">John Doe</h3>
+                                    <span class="job">Designer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus
+                                distinctio voluptas id maiores, enim modi nisi dicta! Quibusdam minima sint illo tempora
+                                eos ea commodi nulla cum? Officia, laboriosam?</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="img/user-3.png" alt="img">
+                                <div class="text-box">
+                                    <h3 class="name">John Doe</h3>
+                                    <span class="job">Designer</span>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus
+                                distinctio voluptas id maiores, enim modi nisi dicta! Quibusdam minima sint illo tempora
+                                eos ea commodi nulla cum? Officia, laboriosam?</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/user-1.png">
-                <h3>John Doe</h3>
-            </div>
-
-            <div class="row">
-                <div class="col-3">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <img src="img/user-1.png">
-                <h3>John Doe</h3>
+                <div class="swiper-pagination js-testimonials-pagination"></div>
             </div>
         </div>
-    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCrusor: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.js-testimonials-pagination',
+                clikable:true
+            },
+            breakpoints:{
+                767:{
+                    slidesPerView:2
+                }
+            }
+        });
+
+    </script>
 
     <!--------------------------------- Brands ------------------------------>
     <div class="brands">
