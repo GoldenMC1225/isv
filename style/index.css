@@ -3,6 +3,12 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* header */
 .header {
   background: radial-gradient(#fff, #ffd6d6);
@@ -278,6 +284,12 @@ nav li:first-child {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+.brands-container{
+  display: flex;
+  justify-content: center;
+}
+
 /* slide-show */
 body {
 	background-color: #f8fafc;
