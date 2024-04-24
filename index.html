@@ -1,518 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="styesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
-    <title>VNU-IS Shopping Web</title>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="header">
-        <div class="container">
-            <!-- nav-bar-->
-            <div class="nav-bar">
-                <!-------- logo -------->
-                <div class="logo">
-                    <img class="logo" src="img/logo.png" alt="logo" width:125px>
-                </div>
-                <!-- menu-bar -->
-                <nav>
-                    <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                                    viewBox="0 96 960 960" width="26">
-                                    <path
-                                        d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                                </svg></a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">Account</a></li>
-                    </ul>
-                    <ul>
-                        <li class="hideOnMobile"><a href="#">Home</a></li>
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                        <li class="hideOnMobile"><a href="products.html">Products</a>
-                                <ul class="products-dropdown">
-                                    <li><a href="">Shoes</a></li>
-                                    <li><a href="">Shirts,T-shirts</a></li>
-                                    <li><a href="">Pants</a></li>
-                                    <li><a href="">Smart,Covenient</a></li>
-                                    <li><a href="">Equipments</a></li>
-                                </ul>
-                            </li>
-                        </div>
-                        <li class="hideOnMobile"><a href="#">About</a></li>
-                        <li class="hideOnMobile"><a href="#">Contact</a></li>
-                        <li class="hideOnMobile"><a href="#">Account</a></li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-                                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                                </svg></a></li>
-                    </ul>
-                    <script src="script/index.js"></script>
-                </nav>
-            </div>
+    <header>
+        <h1 class="logo">Shopping</h1>
+        <ul class="menu-container">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">Collections</li>
+            <li class="menu-item">Products</li>
+            <li class="menu-item red">For Sale</li>
+        </ul>
+    </header>
 
-            <div class="row">
-                <div class="col-2">
-                    <img src="img/image1.png">
-                </div>
-                <div class="col-2">
-                    <h1>Give ur workout <br>A New Style!</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, unde doloribus? Iusto,
-                        magnam.<br> Placeat in neque iure, dolore, minus sequi architecto,<br> ratione nesciunt laborum
-                        quam corrupti magni harum consequuntur rerum!</p>
-                    <a href="#" class="btn">Explore More &#8594;</a>
-                </div>
-            </div>
+    <div class="progress-checkout-container">
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Shipping</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+            <span class="step-title">Payment</span>
+        </div>
+        <div class="progress-step-container">
+            <div class="step-check"></div>
+             <span class="step-title">Review</span>
         </div>
     </div>
 
-    <!--------- Featured Categories -------->
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slide-1" src="img/category-1.jpg"/>
-                <img id="slide-2" src="img/category-2.jpg"/>
-                <img id="slide-3" src="img/category-3.jpg"/>
-            </div>
-            <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
-            </div>
-            
-        </div>
-    </section>
-
-    <!---------- Featured Products --------->
-    <div class="small-container">
-        <div class="title">
-            <h2>Featured Products</h2>
-        </div>
-
-        <div class="row">
-            <div class="container-row">
-                <div class="container page-wrapper">
-                    <div class="page-inner">
-                        <div class="row">
-                            <div class="el-wrapper">
-                                <div class="box-up">
-                                    <img class="img" src="img/product-1.jpg" alt="">
-                                    <div class="img-info">
-                                        <div class="info-inner">
-                                            <span class="p-name">I feel like Pablo</span>
-                                            <span class="p-company">Yeezy</span>
-                                        </div>
-                                        <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span></div>
-                                    </div>
-                                </div>
-    
-                                <div class="box-down">
-                                    <div class="h-bg">
-                                        <div class="h-bg-inner"></div>
-                                    </div>
-    
-                                    <a class="cart" href="#">
-                                        <span class="price">$120</span>
-                                        <span class="add-to-cart">
-                                            <span class="txt">Add in cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="form-container">
+        <h2 class="form-title">Payment Details</h2>
+        <form action="" class="checkout-form">
+            <div class="input-line">
+                <label for="name">Name on card</label>
+                <input type="text" name="name" id="name" placeholder="Your name and surname">
             </div>
 
-            <div class="row">
-                <div class="container page-wrapper">
-                    <div class="page-inner">
-                        <div class="row">
-                            <div class="el-wrapper">
-                                <div class="box-up">
-                                    <img class="img" src="img/product-2.jpg" alt="">
-                                    <div class="img-info">
-                                        <div class="info-inner">
-                                            <span class="p-name">I feel like Pablo</span>
-                                            <span class="p-company">Yeezy</span>
-                                        </div>
-                                        <div class="a-size">Available sizes : <span class="size">S , M , L , XL</span>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="box-down">
-                                    <div class="h-bg">
-                                        <div class="h-bg-inner"></div>
-                                    </div>
-                                    <a class="cart" href="#">
-                                        <span class="price">$120</span>
-                                        <span class="add-to-cart">
-                                            <span class="txt">Add in cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-line">
+                <label for="card">Card number</label>
+                <input type="text" name="card" id="card" placeholder="1111-2222-3333-4444">
             </div>
 
-            <div class="row">
-                <div class="container page-wrapper">
-                    <div class="page-inner">
-                        <div class="row">
-                            <div class="el-wrapper">
-                                <div class="box-up">
-                                    <img class="img" src="img/product-3.jpg" alt="">
-                                    <div class="img-info">
-                                        <div class="info-inner">
-                                            <span class="p-name">I feel like Pablo</span>
-                                            <span class="p-company">Yeezy</span>
-                                        </div>
-                                        <div class="a-size">Available sizes : <span class="size">S , M , L ,
-                                                XL</span></div>
-                                    </div>
-                                </div>
-    
-                                <div class="box-down">
-                                    <div class="h-bg">
-                                        <div class="h-bg-inner"></div>
-                                    </div>
-    
-                                    <a class="cart" href="#">
-                                        <span class="price">$120</span>
-                                        <span class="add-to-cart">
-                                            <span class="txt">Add in cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="input-container">
+            <div class="input-line">
+                <label for="date">Expiring Date</label>
+                <input type="text" name="date" id="date" placeholder="09-21">
             </div>
 
-            <div class="row">
-                <div class="container page-wrapper">
-                    <div class="page-inner">
-                        <div class="row">
-                            <div class="el-wrapper">
-                                <div class="box-up">
-                                    <img class="img" src="img/product-4.jpg" alt="">
-                                    <div class="img-info">
-                                        <div class="info-inner">
-                                            <span class="p-name">I feel like Pablo</span>
-                                            <span class="p-company">Yeezy</span>
-                                        </div>
-                                        <div class="a-size">Available sizes : <span class="size">S , M , L ,
-                                                XL</span></div>
-                                    </div>
-                                </div>
-    
-                                <div class="box-down">
-                                    <div class="h-bg">
-                                        <div class="h-bg-inner"></div>
-                                    </div>
-    
-                                    <a class="cart" href="#">
-                                        <span class="price">$120</span>
-                                        <span class="add-to-cart">
-                                            <span class="txt">Add in cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="container page-wrapper">
-                    <div class="page-inner">
-                        <div class="row">
-                            <div class="el-wrapper">
-                                <div class="box-up">
-                                    <img class="img" src="img/product-5.jpg" alt="">
-                                    <div class="img-info">
-                                        <div class="info-inner">
-                                            <span class="p-name">I feel like Pablo</span>
-                                            <span class="p-company">Yeezy</span>
-                                        </div>
-                                        <div class="a-size">Available sizes : <span class="size">S , M , L ,
-                                                XL</span></div>
-                                    </div>
-                                </div>
-
-                                <div class="box-down">
-                                    <div class="h-bg">
-                                        <div class="h-bg-inner"></div>
-                                    </div>
-
-                                    <a class="cart" href="#">
-                                        <span class="price">$120</span>
-                                        <span class="add-to-cart">
-                                            <span class="txt">Add in cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="container page-wrapper">
-                    <div class="page-inner">
-                        <div class="row">
-                            <div class="el-wrapper">
-                                <div class="box-up">
-                                    <img class="img" src="img/product-6.jpg" alt="">
-                                    <div class="img-info">
-                                        <div class="info-inner">
-                                            <span class="p-name">I feel like Pablo</span>
-                                            <span class="p-company">Yeezy</span>
-                                        </div>
-                                        <div class="a-size">Available sizes : <span class="size">S , M ,
-                                                L , XL</span></div>
-                                    </div>
-                                </div>
-
-                                <div class="box-down">
-                                    <div class="h-bg">
-                                        <div class="h-bg-inner"></div>
-                                    </div>
-
-                                    <a class="cart" href="#">
-                                        <span class="price">$120</span>
-                                        <span class="add-to-cart">
-                                            <span class="txt">Add in cart</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-line">
+                <label for="cvc">CVC</label>
+                <input type="text" name="cvc" id="cvc" placeholder="***">
             </div>
         </div>
-        <a href="products.html" class="btn-2">...</a>
-    </div>
-    <!-------------------------- OFFER ------------------------------>
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="img/exclusive.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on VNU IS STORE</p>
-                    <h1>Smart band 4</h1>
-                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatum</small>
-                        <!-- buy now -->
-                    <a href="#" class="btn">Buy Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-------------------------- TESTIMONIAL ---------------->
-    <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="section-header">
-                <h2 class="title">
-                    what our clients say
-                </h2>
-            </div>
-            <div class="testimonials-content">
-                <div class="swiper testimonials-slider js-testimonials-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide testimonials-item">
-                            <div class="info">
-                                <img src="img/user-1.png" alt="img">
-                                <div class="text-box">
-                                    <h3 class="name">John Doe</h3>
-                                    <span class="job">Designer</span>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus
-                                distinctio voluptas id maiores, enim modi nisi dicta! Quibusdam minima sint illo tempora
-                                eos ea commodi nulla cum? Officia, laboriosam?</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="swiper-slide testimonials-item">
-                            <div class="info">
-                                <img src="img/user-2.png" alt="img">
-                                <div class="text-box">
-                                    <h3 class="name">John Doe</h3>
-                                    <span class="job">Designer</span>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus
-                                distinctio voluptas id maiores, enim modi nisi dicta! Quibusdam minima sint illo tempora
-                                eos ea commodi nulla cum? Officia, laboriosam?</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="swiper-slide testimonials-item">
-                            <div class="info">
-                                <img src="img/user-3.png" alt="img">
-                                <div class="text-box">
-                                    <h3 class="name">John Doe</h3>
-                                    <span class="job">Designer</span>
-                                </div>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus temporibus
-                                distinctio voluptas id maiores, enim modi nisi dicta! Quibusdam minima sint illo tempora
-                                eos ea commodi nulla cum? Officia, laboriosam?</p>
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination js-testimonials-pagination"></div>
-            </div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.js-testimonials-slider', {
-            grabCrusor: true,
-            spaceBetween: 30,
-            pagination: {
-                el: '.js-testimonials-pagination',
-                clikable:true
-            },
-            breakpoints:{
-                767:{
-                    slidesPerView:2
-                }
-            }
-        });
+        <input type="button" value="Complete purchase">
 
-    </script>
-
-    <!--------------------------------- Brands ------------------------------>
-    <div class="brands">
-        <div class="row">
-            <div class="small-container">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="img/logo-godrej.png">
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-5">
-                        <img src="img/logo-coca-cola.png">
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-5">
-                        <img src="img/logo-oppo.png">
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-5">
-                        <img src="img/logo-paypal.png">
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-5">
-                        <img src="img/logo-philips.png">
-                    </div>
-                </div>
-    
-                <div class="row">
-                    <div class="col-5">
-                        <img src="img/logo-white.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!----------------------------------- Footer -------------------------------------->
-    <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col-1">
-                <h3>Download Our App</h3>
-                <p> Download App for Android and IOS mobile phone</p>
-                <div class="app-logo">
-                    <a href="#">
-                        <img src="img/play-store.png">
-                    </a>
-                    <a href="#">
-                        <img src="img/app-store.png">
-                    </a>
-                </div>
-            </div>
-            <div class="footer-col-2">
-                <img src="img/logo.png">
-                <p> Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li><a href="#"> Coupons</a></li>
-                    <li><a href="#"> Blog Post</a></li>
-                    <li><a href="#"> Return Policy</a></li>
-                    <li><a href="#"> Join Affiliate</a></li>
-                </ul>
-            </div>
-            <div class="footer-col-4">
-                <h3>Follow us</h3>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100052571231116"> Facebook</a></li>
-                    <li><a href="#"> Twitter</a></li>
-                    <li><a href="#"> Instagram</a></li>
-                    <li><a href="#"> YouTube</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+</form>
 </div>
+
+
+    <div class="button-box">
+        <div class="sun" id="sun">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+        </div>
+    </div>
+
+
+
+<script>
+
+    let sun = document.getElementById("sun");
+
+    sun.onclick = function(){
+        sun.classList.toggle("night");
+    }
+
+
+</script>
+
+
 </body>
 </html>
