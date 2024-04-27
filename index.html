@@ -21,55 +21,30 @@
 </head>
 
 <body>
+    <!-- navbar -->
+    <section id="navbar-header">
+        <a href="#"><img class="logo" src="img/logo.png" alt="LOGO"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <script src="script/index.js"></script>
+<!-- header -->
     <div class="header">
         <div class="container">
-            <!-- nav-bar-->
-            <div class="nav-bar">
-                <!-------- logo -------->
-                <div class="logo">
-                    <img class="logo" src="img/logo.png" alt="logo" width:125px>
-                </div>
-                <!-- menu-bar -->
-                <nav>
-                    <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                                    viewBox="0 96 960 960" width="26">
-                                    <path
-                                        d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                                </svg></a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">Account</a></li>
-                    </ul>
-                    <ul>
-                        <li class="hideOnMobile"><a href="#">Home</a></li>
-                        <!-- Dropdown -->
-                        <div class="dropdown">
-                            <li class="hideOnMobile"><a href="products.html">Products</a>
-                                <ul class="products-dropdown">
-                                    <li><a href="">Shoes</a></li>
-                                    <li><a href="">Shirts,T-shirts</a></li>
-                                    <li><a href="">Pants</a></li>
-                                    <li><a href="">Smart,Covenient</a></li>
-                                    <li><a href="">Equipments</a></li>
-                                </ul>
-                            </li>
-                        </div>
-                        <li class="hideOnMobile"><a href="#">About</a></li>
-                        <li class="hideOnMobile"><a href="#">Contact</a></li>
-                        <li class="hideOnMobile"><a href="#">Account</a></li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-                                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                                </svg></a></li>
-                    </ul>
-                    <script src="script/index.js"></script>
-                </nav>
-            </div>
-
             <div class="row">
                 <div class="col-2">
                     <img src="img/image1.png">
@@ -471,7 +446,9 @@
 
     </script>
 
-    
+    <!----------------------------------- Contact -------------------------------------->
+
+
 
     <!----------------------------------- Footer -------------------------------------->
     <div class="footer">
