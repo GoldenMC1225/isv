@@ -10,7 +10,7 @@ var db = fetch('./database.json')
         if (item) {
             document.getElementById("pName").innerHTML = item.name;
             document.getElementById("pImg").src = item.img;
-            document.getElementById("pPrice").innerHTML = `${item.price}.000 VND`;
+            document.getElementById("pPrice").innerHTML = `&dollar;${item.price}`;
         }
 
         // else if (item === undefined){

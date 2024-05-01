@@ -46,19 +46,21 @@ body{
     font-weight: 500;
     color: #666;
     border-radius: 50px;
-
 }
 .contact-left textarea{
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
     width: 400px;
+    font-weight: 700;
+
 }
 .contact-inputs:hover{
     border: 2px solid #ff994f;
 }
 .contact-inputs::placeholder{
     color: #a9a9a9;
+    font-weight: 700;
 
 }
 .contact-left button{
