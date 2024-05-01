@@ -12,41 +12,39 @@
     <title>Products</title>
 </head>
 <body>
-    <div class="header">
-        <div class="container"> 
-            <!-- nav-bar-->
-            <div class="nav-bar">
-                <!-------- logo -------->
-                <div class="logo">
-                    <img src="img/logo.png" alt="logo" width:125px>
-                </div>               
-                <!-- menu-bar -->        
-                <nav>
-                    <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a class="nav-linkk" href="cart.html"><i class="fa-duotone fa-cart-shopping" style="--fa-primary-color: #ff6550; --fa-secondary-color: #ff6550; font-size: 30px;"></i></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hideOnMobile navLink"><a href="#">Home</a></li>
-                        <li class="hideOnMobile navLink"><a href="products.html">Products</a></li>
-                        <li class="hideOnMobile navLink"><a href="contact.html">Contact</a></li>
-                        <li class="hideOnMobile">
-                            <a class="nav-link" href="cart.html"><i class="fa-duotone fa-cart-shopping" style="--fa-primary-color: #ff6550; --fa-secondary-color: #ff6550; font-size: 30px;"></i></a>
-                        </li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
-                    </ul>
-                </nav>
-            </div>
+    <section id="navbar-header">
+        <a href="#"><img class="logo"   alt="LOGO"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+                <img src="img/moon.png" id="icon">
+            </ul>
         </div>
-    </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <script src="script/colortheme.js"></script>
+    <script src="script/index.js"></script>
     <!---------------------------------------- Featured Products--------------------- -->
     <div class="small-container">
-        <div class="title">
-            <h2>Featured Products</h2>
+        <div class="row row-2">
+            <h2>All products</h2>
+            <select >
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+            </select>
         </div>
         <div class="row">
             <div class="col-4">
@@ -56,6 +54,55 @@
                     <p>$50.00</p>
                 </a>
             </div>
+
+            <div class="col-4">
+                <a href="product-detail.html?id=1" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html?id=1" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html?id=1" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html?id=1" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html?id=1" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
+            <div class="col-4">
+                <a href="product-detail.html?id=1" style="text-decoration: none;color:black;text-align: center;">
+                    <img src="img/product-1.jpg">
+                    <h4>Item 1</h4>
+                    <p>$50.00</p>
+                </a>
+            </div>
+
             <div class="col-4">
                 <a href="product-detail.html?id=2" style="text-decoration: none;color:black;text-align: center;">
                     <img src="img/product-2.jpg">
@@ -92,8 +139,58 @@
                 </a>
             </div>
         </div>
-        <a href="#" class="btn" style="margin-left: 42.5%;">Explore More</a>
-    </div>   
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
     <script src="script/index.js"></script>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p> Download App for Android and IOS mobile phone</p>
+                    <div class="app-logo">
+                        <a href="#">
+                            <img src="img/play-store.png">
+                        </a>
+                        <a href="#">
+                            <img src="img/app-store.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo.png">
+                    <p> Our purpose is to sustainably make the pleasure and benefits of sports accessible to the many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#"> Coupons</a></li>
+                        <li><a href="#"> Blog Post</a></li>
+                        <li><a href="#"> Return Policy</a></li>
+                        <li><a href="#"> Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100052571231116"> Facebook</a></li>
+                        <li><a href="#"> Twitter</a></li>
+                        <li><a href="#"> Instagram</a></li>
+                        <li><a href="#"> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
