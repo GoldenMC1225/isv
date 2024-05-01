@@ -2,70 +2,70 @@
     "products": [
         {
             "id": 1,
-            "name": "Áo thun nam đỏ",
+            "name": "Red T-shirt",
             "img": "img/product-1.jpg",
-            "price": 500
+            "price": 12.99
         },
         {
             "id": 2,
-            "name": "Giày nam đen",
+            "name": "Black Shoes",
             "img": "img/product-2.jpg",
-            "price": 625
+            "price": 22.99
         },
         {
             "id": 3,
-            "name": "Quần xám nam",
+            "name": "Grey pants",
             "img": "img/product-3.jpg",
-            "price": 350
+            "price": 10.59
         },
         {
             "id": 4,
-            "name": "Áo xanh nam",
+            "name": "Blue printed T-Shirt",
             "img": "img/product-4.jpg",
-            "price": 425
+            "price": 13.99
         },        {
             "id": 5,
-            "name": "Giày thể thao",
+            "name": "Sport Shoes",
             "img": "img/product-5.jpg",
-            "price": 600
+            "price": 24.99
         },
         {
             "id": 6,
-            "name": "Áo thun đen nam",
+            "name": "Men's Black T-Shirt",
             "img": "img/product-6.jpg",
-            "price": 340
+            "price": 10.99
         },
         {
             "id": 7,
-            "name": "Tất",
+            "name": "Socks",
             "img": "img/product-7.jpg",
-            "price": 40
+            "price": 3.99
         },
         {
             "id": 8,
-            "name": "Đồng hồ đeo tay",
+            "name": "Watch",
             "img": "img/product-8.jpg",
-            "price": 745
+            "price": 50
         },        {
             "id": 9,
-            "name": "Đồng hồ thông minh",
+            "name": "Smart Watch",
             "img": "img/product-9.jpg",
-            "price": 850
+            "price": 120
         },        {
             "id": 10,
-            "name": "Giày thể theo nam",
+            "name": "Men's Sport Shoes",
             "img": "img/product-10.jpg",
-            "price": 660
+            "price": 29.99
         },        {
             "id": 11,
-            "name": "Giầy lười nam",
+            "name": "Men's Loafers",
             "img": "img/product-11.jpg",
-            "price": 450
+            "price": 25.99
         },        {
             "id": 12,
-            "name": "Quần chun đen",
+            "name": "Black Pants",
             "img": "img/product-12.jpg",
-            "price": 350
+            "price": 18.99
         }
     ]
 }
