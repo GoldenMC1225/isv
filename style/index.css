@@ -10,6 +10,9 @@
   --primary-color: #8e91a5;
   --secondary-color: #fff;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -263,7 +266,7 @@ body {
 
 .slider-wrapper {
   position: relative;
-  max-width: 48rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
