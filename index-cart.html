@@ -20,45 +20,28 @@
     <title>VNU-IS Shopping Web</title>
 </head>
 <body>
-    <div class="header">
-        <div class="navbar-container">
-            <!-- nav-bar-->
-            <div class="nav-bar">
-                <!-------- logo -------->
-                <div class="logo">
-                    <img src="img/logo.png" alt="logo" width:125px>
-                </div>
-                <!-- menu-bar -->
-                <nav>
-                    <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
-                                    viewBox="0 96 960 960" width="26">
-                                    <path
-                                        d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
-                                </svg></a></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">Account</a></li>
-                    </ul>
-                    <ul> 
-                        <li class="hideOnMobile"><a href="#">Home</a></li>
-                        <li class="hideOnMobile"><a href="#">Products</a></li>
-                        <li class="hideOnMobile"><a href="#">About</a></li>
-                        <li class="hideOnMobile"><a href="#">Contact</a></li>
-                        <li class="hideOnMobile"><a href="#">Account</a></li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
-                                    xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
-                                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
-                                </svg></a></li>
-                    </ul>
-                    <script src="script/index.js"></script>
-                </nav>
-            </div>
+    <section id="navbar-header">
+        <a href="#"><img src="img/" alt="LOGO"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="homepage.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+                <img src="img/moon.png" id="icon">
+            </ul>
         </div>
-    </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <script src="script/index.js"></script>
+
     <!-- cart items details -->
     <div class="small-container cart-page">
         <table>
