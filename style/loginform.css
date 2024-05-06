@@ -167,40 +167,49 @@
   color: whitesmoke;
 }
 
-  .form-container {
-    background: #fff;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    overflow:hidden;
-  }
-  .form-container span {
-    font-weight: bold;
-    padding: 0 10px;
-    color: #555;
-    cursor: pointer;
-    width: 100px;
-    display: inline-block;
-  }
-  
-  .fomr-btn {
-    display: inline-block;
-  }
-  .form-container form {
-    max-width: 300px;
-    padding: 0 20px;
-    position: absolute;
-    top: 130px;
-    transition: transform 1s;
-  }
+.account-page {
+  background: #fff;
+  padding: 50px 0;
+  width: 100%;
+  background: radial-gradient(#fff, #ffd6d6);
+  height: 600px;
+}
+.form-container {
+  background: #fff;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 200px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
 
 form .btn {
-  width: 100%;
+  width: 80%;
   border: none;
   cursor: pointer;
   margin: 10px 0;
@@ -212,12 +221,20 @@ form .btn:focus {
 }
 
 #LoginForm {
-  left: -280px;
+  left: -300px;
   margin-left: 4rem;
 }
 
 #Regform {
   left: 280px;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
 }
 
 form a {
@@ -227,7 +244,7 @@ form a {
 }
 
 #indicator {
-  width: 100px;
+  width: 70px;
   border: none;
   background: #ff523b;
   height: 3px;
