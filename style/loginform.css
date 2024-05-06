@@ -171,7 +171,7 @@
     width: 100px;
     display: inline-block;
   }
-
+  
   .fomr-btn {
     display: inline-block;
   }
@@ -202,7 +202,7 @@ form .btn:focus {
 }
 
 #LoginForm{
-  left:-300px;
+  left:-500px;
 }
 #Regform {
   left:20px;
