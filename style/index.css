@@ -149,6 +149,9 @@ body {
   #lg-bag {
     display: none;
   }
+  .btn{
+    left: 23% !important;
+  }
 }
 #icon {
   width: 30px;
@@ -215,6 +218,8 @@ body {
   padding: 10px 30px;
   border-radius: 30px;
   transition: background 0.5s;
+  position: relative;
+  left: 43%;
 }
 
 .btn:hover {
@@ -779,5 +784,6 @@ ul {
   border-radius: 10px;
   position: absolute;
   left: 50%;
+  top: -10%;
   transform: translateX(-50%);
 }
