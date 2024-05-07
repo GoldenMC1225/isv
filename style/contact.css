@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'outfit';
+    font-family: "Poppins", sans-serif;
     background: linear-gradient(#deb7b2, #eeb2b2);
 
 }
+
+
 .contact-container{
     height: 100vh;
     display: flex;
