@@ -26,10 +26,10 @@
   padding: 20px 15%;
   background: var(--primary-color);
   box-shadow: 0 15 25px rgba(0, 0, 0, 0.06);
-  /* z-index: 999;
+   z-index: 999;
   position: sticky;
   top: 0;
-  left: 0; */
+  left: 0;
 }
 
 #navbar {
