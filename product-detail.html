@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Shopping Web</title>
+    <title>VNU-IS Shopping Web</title>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
         <div class="main container-fluid text-center">
             <div class="row ms-3 product-container">
                 <div class="col-2">
-                    <img src="img/1.jpg" alt="" width="400px" height="500px" id="pImg">
+                    <img src="img/1.jpg" alt="" width="400px" height="500px" style="object-fit: cover;" id="pImg">
                 </div>
                 <div class="col-2 product-detail">
                     <h1 class="name" id="pName"></h1>
@@ -62,7 +62,7 @@
                     <input type="number" name="pQuantity" id="pQuantity" value="1" min="1"><br>
                     <button class="btn addToCart" id="addToCart" onclick="addToCart()">Add to Cart</button>
                     <h3 id="pDetail">Product Detail  <i class="fa-duotone fa-indent" style="--fa-primary-color: #ff6550; --fa-secondary-color: #ff6550;"></i></h3><br>
-                    <p id="pDesc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque harum neque quisquam ab eaque perspiciatis corporis quaerat sapiente nihil, velit pariatur illum doloribus facilis veniam, obcaecati similique, veritatis explicabo.</p>
+                    <p id="pDesc">Give your summer wardrobe a style upgrade with the HRX Men's Active T-shirt. Team is with a pair of shorts for your morning workout or a denims for an evening out with the guys.</p>
                 </div>
             </div>
         </div>
@@ -71,27 +71,28 @@
             <!-- TODO -->
             <h2 class="col-2">Related Product</h2>
             <p class="col-2 right"><a href="products.html">View More</a></p>
-            <div class="related-product">
-                <div class="product">
+            <div class="related-product" id="relatedProducts">
+                <!-- <a href="#" class="product">
                     <img src="img/product-1.jpg" alt="Product 1">
                     <h3>Product 1</h3>
                     <p>$19.99</p>
-                </div>
-                <div class="product">
-                    <img src="img/product-2.jpg" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>$24.99</p>
-                </div>
-                <div class="product">
-                    <img src="img/product-3.jpg" alt="Product 3">
-                    <h3>Product 3</h3>
-                    <p>$14.99</p>
-                </div>
-                <div class="product">
-                    <img src="img/product-4.jpg" alt="Product 4">
-                    <h3>Product 4</h3>
-                    <p>$29.99</p>
-                </div>
+                </a>
+                <a href="#" class="product">
+                    <img src="img/product-1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                </a>
+                <a href="#" class="product">
+                    <img src="img/product-1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                </a>
+                <a href="#" class="product">
+                    <img src="img/product-1.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                </a> -->
+
             </div>
         </div>
     </div>

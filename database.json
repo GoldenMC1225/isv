@@ -46,25 +46,35 @@
             "name": "Watch",
             "img": "img/product-8.jpg",
             "price": 50
-        },        {
+        },
+        {
             "id": 9,
             "name": "Smart Watch",
             "img": "img/product-9.jpg",
             "price": 120
-        },        {
+        },
+        {
             "id": 10,
             "name": "Men's Sport Shoes",
             "img": "img/product-10.jpg",
             "price": 29.99
-        },        {
+        },
+        {
             "id": 11,
             "name": "Men's Loafers",
             "img": "img/product-11.jpg",
             "price": 25.99
-        },        {
+        },
+        {
             "id": 12,
             "name": "Black Pants",
             "img": "img/product-12.jpg",
+            "price": 18.99
+        },
+        {
+            "id": 13,
+            "name": "Black Men's Sports Set",
+            "img": "img/product-13.jpg",
             "price": 18.99
         }
     ]

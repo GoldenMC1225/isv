@@ -106,12 +106,13 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 20px 15%;
+    padding-left: 20%;
     background: white;
     box-shadow: 0 15 25px rgba(0, 0, 0, 0.06);
-    z-index: 999;
+    /* z-index: 999;
     position: sticky;
     top: 0;
-    left: 0;
+    left: 0; */
 }
 
 #navbar {
@@ -332,24 +333,14 @@ div.products-table {
     display: flex;
 }
 
-.size {
-    width: 15%;
-}
+.size {width: 15%;}
+.price {width: 15%;}
+.quantity {width: 15%;}
+.total-price {width: 15%;}
+.product-name {margin-left: 1rem; width: 100%}
 
-.price {
-    width: 15%;
-}
-
-.quantity {
-    width: 15%;
-}
-
-.total-price {
-    width: 15%;
-}
-
-.product-name {
-    margin-left: 1rem;
+.product-name h6{
+    font-size: 18px;
 }
 
 /* END PRODUCTS CART */

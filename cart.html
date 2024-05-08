@@ -14,7 +14,7 @@
         href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css"
         rel="stylesheet">
 
-    <title>Shopping cart</title>
+    <title>VNU-IS Shopping Web</title>
 </head>
 
 <body>
@@ -29,7 +29,6 @@
                 <li><a href="Loginform.html">Account</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <a href="#" id="close"><i class="fa fa-times"></i></a>
-                <img src="img/moon.png" id="icon">
             </ul>
         </div>
 
@@ -52,37 +51,8 @@
                     <div class="divTableHead">&nbsp;Total Price</div>
                 </div>
             </div>
-            <div class="divTableBody">
-                <div class="divTableRow">
-                    <div class="divTableCell product">&nbsp;
-                        <img src="img/product-1.jpg" alt="product-1" style="width: 100px; height: 100px; object-fit: cover;">
-                        <div class="product-details">
-                            <div class="product-name">
-                                <h6>Product 1 Demo</h6>
-                                <p>Remove</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divTableCell size">&nbsp;XL</div>
-                    <div class="divTableCell">&nbsp;$150</div>
-                    <div class="divTableCell">&nbsp;1</div>
-                    <div class="divTableCell">&nbsp;$150</div>
-                </div>
-                <div class="divTableRow">
-                    <div class="divTableCell product">&nbsp;
-                        <img src="img/product-2.jpg" alt="product-1" style="width: 100px; height: 100px; object-fit: cover;">
-                        <div class="product-details">
-                            <div class="product-name">
-                                <h6>Product 2 Demo</h6>
-                                <p>Remove</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divTableCell size">&nbsp;XL</div>
-                    <div class="divTableCell">&nbsp;$240</div>
-                    <div class="divTableCell">&nbsp;1</div>
-                    <div class="divTableCell">&nbsp;$240</div>
-                </div>
+            <div class="divTableBody" id="cartProducts">
+                <!-- DO NOT TOUCH -->
             </div>
         </div>
     </div>
@@ -112,14 +82,14 @@
             <p class="summary-text">Shipping and additional costs are calculated based on values you
                 have entered.</p>
             <ul class="summary-list">
-                <li class="summary-list-child"><strong class="text-muted">Order Subtotal
-                    </strong><strong>$390.00</strong></li>
-                <li class="summary-list-child"><strong class="text-muted">Shipping and
-                        handling</strong><strong>$10.00</strong></li>
+                <li class="summary-list-child"><strong>Order Subtotal
+                    </strong><strong id="orderSubtotal"></strong></li>
+                <li class="summary-list-child"><strong>Shipping and
+                        handling</strong><strong id="shippingPrice">$10.00</strong></li>
                 <li class="summary-list-child"><strong
-                        class="text-muted">Tax</strong><strong>$0.00</strong></li>
-                <li class="summary-list-child"><strong class="text-muted">Total</strong>
-                    <h5 class="font-weight-bold">$400.00</h5>
+                    >Tax</strong><strong>$0.00</strong></li>
+                <li class="summary-list-child"><strong>Total</strong>
+                    <strong id="totalPrice"></strong>
                 </li>
             </ul>
             <a href="checkout.html" class="btn btn-checkout">Procceed to checkout</a>
@@ -169,7 +139,7 @@
         </div>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-    <script async src="script/cart.js"></script>
+    <script src="script/cart.js"></script>
 </body>
 
 </html>

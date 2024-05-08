@@ -1,37 +1,39 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
+const pQuantity = document.getElementById("pQuantity");
+const pSize = document.getElementById("pSize");
 
 // Fetch data from database & Edit content
 var db = fetch('./database.json')
     .then(res => res.json())
     .then(data => {
         const item = data.products.find(item => item.id == id);
-        console.log(item)
+        // console.log(item) // TESTING PURPOSES
         if (item) {
             document.getElementById("pName").innerHTML = item.name;
             document.getElementById("pImg").src = item.img;
             document.getElementById("pPrice").innerHTML = `&dollar;${item.price}`;
+
+            // RELATED PRODUCTS
+            for (let i=0; i<4; i++) {
+                let id = Math.floor(Math.random() * data.products.length);
+                const relatedProducts = document.getElementById("relatedProducts");
+                const related = document.createElement("a");
+                related.classList.add("product");
+                related.href = `detail.html?id=${data.products[id].id}`;
+                related.innerHTML = 
+                `
+                <img src="${data.products[id].img}">
+                <h6>${data.products[id].name}</h6>
+                <p>&dollar;${data.products[id].price}</p>
+                `
+                relatedProducts.appendChild(related);
+            }
         }
 
-        // else if (item === undefined){
-        //     window.location.href = "404.html";
-        // }
-
-        // const html = data.users.map(user => `
-        //     <div>
-        //         <h1>${user.name}</h1>
-        //         <p>${user.email}</p>
-        //     </div>
-        // `).join('');
-        // document.querySelector('#users').innerHTML = html;
-        // const product = data.products.map(product => `
-        //     <div>
-        //         <h1>${product.name}</h1>
-        //         <p>${product.price}</p>
-        //     </div>
-        // `).join('');
-        // document.querySelector('#product').innerHTML = product;
-        console.log(data);
+        else if (item === undefined){
+            window.location.href = "404.html";
+        }
     })
     .catch(error => console.error('Error:', error));
 
@@ -39,25 +41,17 @@ var db = fetch('./database.json')
 
 // Cart function
 
-var cart = localStorage.getItem('cart')
-
-
 function addToCart(){
-    // localStorage.setItem('cart', id)
-    // DO NOT use right now
-    // TODO fix this
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let itemInCart = cart.find(item => item.id === id);
+    let size = pSize.value == "select" ? "M" : pSize.value;
+    if (itemInCart) {
+        itemInCart.quantity += parseInt(pQuantity.value);
+    } else {
+        cart.push({id: id, quantity: parseInt(pQuantity.value), size: size});
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
+
 // End of Cart function
 
-
-// SIDEBAR
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-}
-
-// End of SIDEBAR
