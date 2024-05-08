@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Contact form</title>
     <link rel="stylesheet" href="style/contact.css">  
 </head>
 <body>
+    <section id="header">
+        <a href="#"><img src="" class="logo" alt="Logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="lg-bag"><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+<scrip src="script/contact.js"></scrip>
+    </section>
+
+
     <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
