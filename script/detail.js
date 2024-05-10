@@ -12,7 +12,7 @@ var db = fetch('./database.json')
         if (item) {
             document.getElementById("pName").innerHTML = item.name;
             document.getElementById("pImg").src = item.img;
-            document.getElementById("pPrice").innerHTML = `&dollar;${item.price}`;
+            document.getElementById("pPrice").innerHTML = `$${item.price}`;
 
             // RELATED PRODUCTS
             for (let i=0; i<4; i++) {
@@ -35,7 +35,7 @@ var db = fetch('./database.json')
             window.location.href = "404.html";
         }
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => console.error(error));
 
 // End of Fetch data & Edit content
 
@@ -44,7 +44,7 @@ var db = fetch('./database.json')
 function addToCart(){
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let itemInCart = cart.find(item => item.id === id);
-    let size = pSize.value == "select" ? "M" : pSize.value;
+    let size = pSize.value = "select" ? "M" : pSize.value;
     if (itemInCart) {
         itemInCart.quantity += parseInt(pQuantity.value);
     } else {
